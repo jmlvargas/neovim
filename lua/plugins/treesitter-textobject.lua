@@ -18,6 +18,7 @@ return {
             ["af"] = "@function.outer",
             ["if"] = "@function.inner",
             ["ac"] = "@class.outer",
+            ["am"] = "@comment.outer",
             -- You can optionally set descriptions to the mappings (used in the desc parameter of
             -- nvim_buf_set_keymap) which plugins like which-key display
             ["ic"] = { query = "@class.inner", desc = "Select inner part of a class region" },
@@ -48,6 +49,17 @@ return {
           include_surrounding_whitespace = true,
         },
       },
+      --textobjects = {
+      --  swap = {
+      --    enable = true,
+      --    swap_next = {
+      --      ["<leader>a"] = "@parameter.inner",
+      --    },
+      --    swap_previous = {
+      --      ["<leader>A"] = "@parameter.inner",
+      --    }
+      --  }
+      --}
     })
   end
 }
