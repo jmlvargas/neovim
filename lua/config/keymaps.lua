@@ -43,4 +43,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', '<cmd>write<CR>', { desc = 'Save file' })
 -- </jv:keymaps>
 
+vim.keymap.set('n', 'gl', function() vim.diagnostic.open_float() end,
+    { desc = 'Open Diagnostics in Float' })
 
