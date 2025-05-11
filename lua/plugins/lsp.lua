@@ -187,8 +187,8 @@ return {
     --  So, we create new capabilities with blink.cmp, and then broadcast that to the servers.
 
     -- jv: temporary patch
-    --local capabilities = require('blink.cmp').get_lsp_capabilities()
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    local capabilities = require("blink.cmp").get_lsp_capabilities()
+    --local capabilities = vim.lsp.protocol.make_client_capabilities()
 
     -- Enable the following language servers
     --  Feel free to add/remove any LSPs that you want here. They will automatically be installed.
