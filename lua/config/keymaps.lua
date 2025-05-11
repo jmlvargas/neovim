@@ -46,3 +46,6 @@ vim.keymap.set({ 'n', 'i', 'v' }, '<C-s>', '<cmd>write<CR>', { desc = 'Save file
 vim.keymap.set('n', 'gl', function() vim.diagnostic.open_float() end,
     { desc = 'Open Diagnostics in Float' })
 
+vim.keymap.set('n', '<leader>cf', function() require('conform').format() end,
+    { desc = 'Format Document' })
+
