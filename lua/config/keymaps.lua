@@ -8,7 +8,7 @@ vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc = "Open Parent Folder" }
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+vim.keymap.set("n", "<leader>cq", vim.diagnostic.setloclist, { desc = "Diagnostic [Q]uickfix list" })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -37,6 +37,8 @@ vim.keymap.set("n", "<leader>wh", "<C-w><C-h>", { desc = "Move focus to the left
 vim.keymap.set("n", "<leader>wl", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<leader>wj", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<leader>wk", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+vim.keymap.set("n", "<leader>ws", "<C-w><C-s>", { desc = "[S]plit Horzontally" })
+vim.keymap.set("n", "<leader>wv", "<C-w><C-v>", { desc = "Split [V]ertically" })
 
 -- NOTE: Some terminals have coliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
@@ -51,8 +53,8 @@ vim.keymap.set("n", "<leader>cd", function()
   vim.diagnostic.open_float()
 end, { desc = "Code Diagnostics in Float" })
 
-vim.keymap.set("n", "<leader>cf", function()
-  require("conform").format()
-end, { desc = "Code Format" })
+-- vim.keymap.set("n", "<leader>cf", function()
+--   require("conform").format()
+-- end, { desc = "Code Format" })
 
 vim.keymap.set("n", "gx", "gx", { desc = "Open URI under cursor" })

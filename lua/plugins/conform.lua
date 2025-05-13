@@ -17,4 +17,9 @@ return {
       lsp_format = "fallback",
     },
   },
+  setup = function()
+    vim.keymap.set("n", "<leader>cf", function()
+      require("conform").format()
+    end, { desc = "Code Format" })
+  end,
 }

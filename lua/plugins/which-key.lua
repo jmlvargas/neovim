@@ -47,13 +47,13 @@ return {
     -- Document existing key chains
     spec = {
       -- { "<leader>s", group = "[S]earch", mode = { "n" } },
-      { "<leader>l", group = "Togg[l]e" },
+      { "<leader>t", group = "[T]oggle" },
       -- { "<leader>h", group = "Git [H]unk", mode = { "n", "v" } },
       { "<leader>c", group = "[C]ode", mode = { "n" } },
       { "<leader>f", group = "[F]ind", mode = { "n" } },
       { "<leader>d", group = "[D]ebug", mode = { "n" } },
       { "<leader>w", group = "[W]indow", mode = { "n" } },
-      { "<leader>t", group = "[T]ools", mode = { "n" } },
+      { "<leader>l", group = "Too[l]s", mode = { "n" } },
     },
   },
   keys = {

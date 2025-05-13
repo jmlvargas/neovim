@@ -16,6 +16,9 @@ return {
     "saghen/blink.cmp",
   },
   config = function()
+    -- Diagnostic keymaps
+    vim.keymap.set("n", "<leader>cq", vim.diagnostic.setloclist, { desc = "Diagnostic [Q]uickfix list" })
+
     -- Brief aside: **What is LSP?**
     --
     -- LSP is an initialism you've probably heard, but might not understand what it is.
