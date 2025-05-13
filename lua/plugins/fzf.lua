@@ -21,14 +21,14 @@ return {
       desc = "Find by Grep",
     },
     {
-      "<leader>fc",
+      "<leader>fi",
       function()
         require("fzf-lua").files({ cwd = vim.fn.stdpath("config") })
       end,
       desc = "Find Configuration Files",
     },
     {
-      "<leader>fi",
+      "<leader>fz",
       function()
         require("fzf-lua").builtin()
       end,
@@ -40,13 +40,6 @@ return {
         require("fzf-lua").helptags()
       end,
       desc = "Find Help",
-    },
-    {
-      "<leader>fk",
-      function()
-        require("fzf-lua").keymaps()
-      end,
-      desc = "Find Keymaps",
     },
     {
       "<leader>fk",
@@ -98,7 +91,7 @@ return {
       desc = "Find Buffers",
     },
     {
-      "<leader>/",
+      "<leader>fc",
       function()
         require("fzf-lua").lgrep_curbuf()
       end,

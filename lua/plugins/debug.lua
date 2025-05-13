@@ -22,7 +22,7 @@ return {
   keys = {
     -- Basic debugging keymaps, feel free to change to your liking!
     {
-      "<leader>ds",
+      "<leader>cs",
       function()
         require("dap").continue()
       end,
@@ -50,14 +50,14 @@ return {
       desc = "Debug: Step Out",
     },
     {
-      "<leader>db",
+      "<leader>cb",
       function()
         require("dap").toggle_breakpoint()
       end,
       desc = "Debug: Toggle Breakpoint",
     },
     {
-      "<leader>dB",
+      "<leader>cB",
       function()
         require("dap").set_breakpoint(vim.fn.input("Breakpoint condition: "))
       end,
