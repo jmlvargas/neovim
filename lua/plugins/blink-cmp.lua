@@ -2,7 +2,7 @@ return {
   enabled = true,
   "saghen/blink.cmp",
   -- optional: provides snippets for the snippet source
-  -- dependencies = { 'rafamadriz/friendly-snippets' },
+  dependencies = { "rafamadriz/friendly-snippets" },
 
   -- use a release tag to download pre-built binaries
   version = "1.*",
@@ -26,7 +26,7 @@ return {
     -- C-k: Toggle signature help (if signature.enabled = true)
     --
     -- See :h blink-cmp-config-keymap for defining your own keymap
-    keymap = { preset = "super-tab" },
+    keymap = { preset = "enter" },
 
     appearance = {
       -- 'mono' (default) for 'Nerd Font Mono' or 'normal' for 'Nerd Font'
