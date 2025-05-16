@@ -61,7 +61,14 @@ return {
     -- Default list of enabled providers defined so that you can extend it
     -- elsewhere in your config, without redefining it, due to `opts_extend`
     sources = {
-      default = { "lsp", "path", "snippets" }, -- , 'buffer' }, I don't whant buffer.
+      default = { "lsp", "path", "snippets", "lazydev" }, -- , 'buffer' }, I don't whant buffer.
+      providers = {
+        lazydev = {
+          name = "LazyDev",
+          module = "lazydev.integrations.blink",
+          score_offset = 100, -- show at a higher priority than lsp
+        },
+      },
     },
 
     -- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
